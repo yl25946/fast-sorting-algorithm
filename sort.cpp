@@ -28,7 +28,7 @@ void sort(std::vector<int> &arr)
     {
         for (int j = 0; j < sorting[i]; ++j)
         {
-            arr[counter] = i;
+            arr[counter] = i + min;
             counter++;
         }
     }
@@ -48,7 +48,7 @@ int main()
 {
     std::vector<int> test = {5, 2, 8, 1, 9, 3};
     sort(test);
-    // {0, 1, 2, 4, 7, 8}
+    // {1, 2, 3, 5, 8, 9}
     printArr(test);
 
     return 0;
